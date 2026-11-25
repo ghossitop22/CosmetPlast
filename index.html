@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="CosmetPlast C.A. Fabricantes de articulos plasticos
+                 para el hogar en San Cristobal, Tachira.">
+  <title>CosmetPlast C.A. | Articulos plasticos para el hogar</title>
+
+  <!-- Fuente Poppins (si no hay internet se usa Arial) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- encabezado -->
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a href="#inicio" class="logo">
+        <img src="img/logo.jpeg" alt="CosmetPlast C.A." class="logo-img">
+      </a>
+
+      <!-- Casilla oculta: al marcarla se abre el menú -->
+      <input type="checkbox" id="casillaMenu" class="casilla-menu">
+      <label for="casillaMenu" class="boton-menu"
+             aria-label="Abrir menu">
+        &#9776;
+      </label>
+
+      <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="boton boton-naranja boton-cotizar">
+        Cotizar directo
+      </a>
+    </div>
+    <div class="franja"></div>
+  </header>
+
+  <main>
+
+    <!-- inicio -->
+    <section class="seccion inicio" id="inicio">
+      <div class="contenedor inicio-grid">
+
+        <div class="inicio-texto">
+          <span class="etiqueta etiqueta-verde">
+            Fabricantes directos desde 2015
+          </span>
+          <h1>
+            Calidad e innovación en
+            <span class="azul">artículos plásticos</span>
+            para el hogar
+          </h1>
+          <p>
+            Somos especialistas en inyección de plástico de alta
+            resistencia. Producimos soluciones prácticas para el
+            hogar venezolano desde nuestra planta en la Zona
+            Industrial de Paramillo, San Cristóbal, Táchira.
+          </p>
+
+          <div class="botones">
+            <a href="#catalogo" class="boton boton-naranja">
+              Ver catálogo
+            </a>
+            <a href="#contacto" class="boton boton-borde">
+              Contactar gerencia
+            </a>
+          </div>
+
+          <ul class="datos">
+            <li><strong>+10 años</strong> de trayectoria</li>
+            <li><strong>100% virgen</strong> polímero certificado</li>
+            <li><strong>Sin intermediarios</strong> venta mayorista</li>
+          </ul>
+        </div>
+
+        <div class="inicio-imagen">
+          <img src="  img/maquina.jpeg" alt="Molde de la inyectora" class="foto-planta">
+          <div class="sello">Hecho en Venezuela</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- nosotros -->
+    <section class="seccion fondo-gris" id="nosotros">
+      <div class="contenedor">
+
+        <div class="titulo-seccion">
+          <h2>
+            Comprometidos con el
+            <span class="azul">hogar venezolano</span>
+          </h2>
+          <p>
+            Desde el corazón industrial andino trabajamos para
+            abastecer el mercado con manufactura plástica accesible
+            y resistente.
+          </p>
+        </div>
+
+        <div class="tarjetas-dos">
+          <article class="tarjeta borde-azul">
+            <h3>Historia e identidad</h3>
+            <p>
+              Fundada en el año 2015 en la Zona Industrial de
+              Paramillo, Avenida 4, Calle C, Parroquia San Juan
+              Bautista, <strong>CosmetPlast C.A.</strong> nació para
+              transformar resinas en artículos indispensables para
+              las familias.
+            </p>
+          </article>
+
+          <article class="tarjeta borde-naranja">
+            <h3>Atención sin intermediarios</h3>
+            <p>
+              Nuestra planta funciona con una máquina inyectora de
+              plástico que produce los artículos que vendemos.
+              Al tratar directamente con el dueño, los pedidos se
+              resuelven más rápido y a precio de fábrica.
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+  <!-- catalogo-->
+    <section class="seccion" id="catalogo">
+      <div class="contenedor">
+
+        <div class="titulo-seccion">
+          <h2>Catálogo de <span class="azul">productos</span></h2>
+          <p>
+            Soluciones prácticas y resistentes para el uso diario
+            en el hogar y el comercio.
+          </p>
+        </div>
+
+        <!-- Los filtros funcionan con casillas de opción y CSS -->
+        <div class="catalogo">
+          <input type="radio" name="filtro" class="filtro-radio"
+                 id="f-todos" checked>
+          <input type="radio" name="filtro" class="filtro-radio"
+                 id="f-almacenamiento">
+          <input type="radio" name="filtro" class="filtro-radio"
+                 id="f-industrial">
+          <input type="radio" name="filtro" class="filtro-radio"
+                 id="f-juguetes">
+          <input type="radio" name="filtro" class="filtro-radio"
+                 id="f-limpieza">
+
+          <div class="filtros">
+            <label for="f-todos" class="filtro">Todos</label>
+            <label for="f-almacenamiento" class="filtro">
+              Almacenamiento
+            </label>
+            <label for="f-industrial" class="filtro">
+              Industrial / Eléctrico
+            </label>
+            <label for="f-juguetes" class="filtro">Juguetes</label>
+            <label for="f-limpieza" class="filtro">Limpieza</label>
+          </div>
+
+          <div class="productos">
+            <article class="producto almacenamiento">
+              <img src="img/gancho de ropa.jpeg" alt="gancho de ropa" class="foto">
+              <div class="producto-cuerpo">
+                <span class="producto-categoria">
+                  Almacenamiento - Pack x6 unidades
+                </span>
+                <h3>Perchas para ropa</h3>
+                <p>Perchas livianas y resistentes para el closet.</p>
+                <a href="#contacto" class="producto-boton">Cotizar</a>
+              </div>
+            </article>
+
+            <article class="producto almacenamiento">
+              <img src="img/ganchos.jpeg" alt="ganchos" class="foto">
+              <div class="producto-cuerpo">
+                <span class="producto-categoria">
+                  Almacenamiento - Pack x30 unidades
+                </span>
+                <h3>Pinzas para ropa</h3>
+                <p>Pinzas de colores, firmes e irrompibles.</p>
+                <a href="#contacto" class="producto-boton">Cotizar</a>
+              </div>
+            </article>
+
+            <article class="producto industrial">
+              <img src="img/cajetin electrico.jpeg" alt="cajetin electrico" class="foto">
+              <div class="producto-cuerpo">
+                <span class="producto-categoria">
+                  Industrial / Eléctrico - Uso profesional
+                </span>
+                <h3>Cajetín eléctrico</h3>
+                <p>Caja rectangular para instalaciones eléctricas.</p>
+                <a href="#contacto" class="producto-boton">Cotizar</a>
+              </div>
+            </article>
+
+            <article class="producto juguetes">
+              <img src="img/Cubetas con bloques.jpeg" alt="Cubetas con bloques" class="foto">
+              <div class="producto-cuerpo">
+                <span class="producto-categoria">
+                  Juguetes - Bloques de colores
+                </span>
+                <h3>Cubeta con bloques</h3>
+                <p>Cubeta con asa y bloques armables para jugar.</p>
+                <a href="#contacto" class="producto-boton">Cotizar</a>
+              </div>
+            </article>
+
+            <article class="producto limpieza">
+              <img src="img/cubetas de colores.jpeg" alt="Cubetas de colores" class="foto">
+              <div class="producto-cuerpo">
+                <span class="producto-categoria">
+                  Limpieza - Varios colores
+                </span>
+                <h3>Cubeta con asa metálica</h3>
+                <p>Cubeta resistente con pico vertedor para el hogar.</p>
+                <a href="#contacto" class="producto-boton">Cotizar</a>
+              </div>
+            </article>
+      </div>
+    </section>
+
+    <!--contacto-->
+    <section class="seccion fondo-gris" id="contacto">
+      <div class="contenedor">
+
+        <div class="titulo-seccion">
+          <h2>Contacto <span class="azul">comercial</span></h2>
+          <p>
+            Trato directo con el fabricante. Escríbenos para pedidos,
+            disponibilidad y cotizaciones.
+          </p>
+        </div>
+
+        <div class="contacto-grid">
+
+          <!-- Datos de contacto -->
+          <div class="contacto-info">
+            <div class="dato-contacto">
+              <h3>Planta industrial</h3>
+              <p>
+                Zona Industrial de Paramillo, Avenida 4, Calle C,
+                Parroquia San Juan Bautista, San Cristóbal,
+                Estado Táchira.
+              </p>
+            </div>
+
+            <div class="dato-contacto">
+              <h3>WhatsApp del dueño</h3>
+              <p>+58 414-7527916</p>
+              <a class="boton boton-verde"
+                 href="https://wa.me/584147527916"
+                 target="_blank" rel="noopener">
+                Escribir por WhatsApp
+              </a>
+            </div>
+
+            <div class="dato-contacto">
+              <h3>Correo</h3>
+              <p>cosmetplast@gmail.com</p>
+            </div>
+
+            <div class="dato-contacto">
+              <h3>Horario</h3>
+              <p>Lunes a viernes, 8:00 AM - 5:00 PM</p>
+            </div>
+          </div>
+
+          <!-- formulario de acotización -->
+          <form class="formulario" method="get"
+                action="https://wa.me/584147527916"
+                target="_blank">
+            <h3>Solicitar cotización</h3>
+            <p class="ayuda">
+              Escribe tu mensaje y se abrirá WhatsApp con el texto listo.
+            </p>
+
+            <label for="mensaje">
+              Nombre o empresa, producto y cantidad aproximada
+            </label>
+            <textarea id="mensaje" name="text" rows="8" required
+                      placeholder="Ej: Soy Luis, quiero 50 cajetines"
+            ></textarea>
+
+            <button type="submit" class="boton boton-naranja">
+              Enviar solicitud
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== PIE DE PAGINA ========== -->
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <p><strong>CosmetPlast C.A.</strong> - San Cristóbal, Táchira</p>
+      <p>Instagram: @cosmetplast.ca</p>
+      <p class="pie-chico">
+        Proyecto sociotecnológico - PNF en Informática - UPTAIET - 2026
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
