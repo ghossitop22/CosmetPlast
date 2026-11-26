@@ -103,7 +103,7 @@ textarea:focus-visible {
 
 /* ---------- 3. encabezado ---------- */
 .encabezado {
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 10;
   background: var(--blanco);
@@ -557,7 +557,53 @@ textarea:focus-visible {
   .boton-cotizar {
     display: none;
   }
+
+  /* El menú se oculta hasta que se pulsa el botón */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 20px;
+    background: var(--blanco);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .casilla-menu:checked ~ .menu {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 12px 0;
+  }
+
+  .inicio h1 {
+    font-size: 2rem;
+  }
+
+  .seccion {
+    padding: 50px 0;
+  }
 }
 
+@media (max-width: 480px) {
+  .producto {
+    width: 100%;
+  }
+}
+
+/* Respeta a quien desactiva las animaciones */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .boton {
+    transition: none;
+  }
+}
 
   
